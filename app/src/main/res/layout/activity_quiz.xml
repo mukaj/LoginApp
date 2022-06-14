@@ -10,11 +10,12 @@
         android:id="@+id/btnFragment1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fragment 1"
+        android:text="Reset Game"
         app:layout_constraintEnd_toStartOf="@+id/btnFragment2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="resetGame"/>
 
     <Button
         android:id="@+id/btnFragment2"
@@ -24,7 +25,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnFragment1"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
 
     <fragment
         android:name="com.example.loginapp.QuizFragment"

@@ -4,19 +4,91 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".QuizFragment">
 
     <TextView
-        android:id="@+id/tvQuizFragment"
+        android:id="@+id/question_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Quiz Fragment"
-        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.169" />
+
+    <TextView
+        android:id="@+id/ScoreText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:layout_marginTop="72dp"
+        android:text="Score: 0"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/answer_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/answer_b"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_text" />
+
+    <Button
+        android:id="@+id/answer_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/answer_c"
+        app:layout_constraintStart_toStartOf="@+id/answer_a"
+        app:layout_constraintTop_toBottomOf="@+id/answer_a" />
+
+    <Button
+        android:id="@+id/answer_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/answer_f"
+        app:layout_constraintStart_toStartOf="@+id/answer_b"
+        app:layout_constraintTop_toBottomOf="@+id/answer_b" />
+
+    <Button
+        android:id="@+id/answer_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/answer_e"
+        app:layout_constraintStart_toStartOf="@+id/answer_f"
+        app:layout_constraintTop_toBottomOf="@+id/answer_f" />
+
+    <Button
+        android:id="@+id/answer_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/answer_d"
+        app:layout_constraintTop_toBottomOf="@+id/answer_d" />
+
+    <Button
+        android:id="@+id/answer_f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/answer_d"
+        app:layout_constraintStart_toStartOf="@+id/answer_c"
+        app:layout_constraintTop_toBottomOf="@+id/answer_c" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
